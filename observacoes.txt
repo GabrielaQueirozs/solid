@@ -1,0 +1,50 @@
+Projeto para a Livraria
+- Objetos:
+- Venda
+- Produto
+- Cliente
+- Funcionario
+- Itemvendido
+- Pagamento
+
+
+- DESMENBRAR OBJETOS:
+
+- Pessoa:
+* Id, Nome, CPF, Email, Telefone, Endereco
+
+- Cliente herda pessoa:
+* Aniversario
+
+
+- Funcionario herda pessoa:
+* Cargo, Salario
+ - Autor herda pessoa:
+ * genero_literario
+
+ - Endereco sera associado a classe pessoa;
+ * tipo_logradouro, lagradouro, Numero, Cep, Bairro
+
+- Produto
+* ID, Nome, Descricao, Preco
+
+- Venda 
+* ID, Cliente, Funcionario, Data-hora
+
+- Itemvendido
+* ID, Venda, Produto, Quantidade
+
+- Pagamento
+* ID, Venda, Total_pagar
+
+- Requisitos funcionais:
+- o que podemos fazer com os Objetos:
+- Cadastrar
+- Atualizar
+- Pesquisar
+- Listar
+- Apagar
+
+
+
+
