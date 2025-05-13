@@ -1,50 +1,41 @@
-Projeto para a Livraria
-- Objetos:
-- Venda
-- Produto
-- Cliente
-- Funcionario
-- Itemvendido
-- Pagamento
+Projeto a livraria
+    - objetos:
+        - venda
+        - produto
+        - cliente
+        - funcionario
+        - itemvendido
+        - pagamento
+        - endereco
+    - desmembrar objetos:
+        - pessoa:
+            + id, nome, cpf, email, telefone, endereco
+            - cliente herda pessoa:
+                + aniversario
+            - funcionario herda pessoa:
+                + cargo, salario
+            - autor herda pessoa:
+                + genero_literario
+        
+        - endereco será associado à classe pessoa:        
+            + tipo_logradouro, logradouro, numero, cep, bairro
+        
+        - produto:
+            + id, nome, descricao, preco
 
+        - venda:
+            + id, cliente, funcionario, data_hora
+        
+        - itemvendido:
+            + id, venda, produto, quantidade
 
-- DESMENBRAR OBJETOS:
+        - pagamento:
+            + id, venda, total_pagar
 
-- Pessoa:
-* Id, Nome, CPF, Email, Telefone, Endereco
-
-- Cliente herda pessoa:
-* Aniversario
-
-
-- Funcionario herda pessoa:
-* Cargo, Salario
- - Autor herda pessoa:
- * genero_literario
-
- - Endereco sera associado a classe pessoa;
- * tipo_logradouro, lagradouro, Numero, Cep, Bairro
-
-- Produto
-* ID, Nome, Descricao, Preco
-
-- Venda 
-* ID, Cliente, Funcionario, Data-hora
-
-- Itemvendido
-* ID, Venda, Produto, Quantidade
-
-- Pagamento
-* ID, Venda, Total_pagar
-
-- Requisitos funcionais:
-- o que podemos fazer com os Objetos:
-- Cadastrar
-- Atualizar
-- Pesquisar
-- Listar
-- Apagar
-
-
-
-
+    - Requisitos funcionais:
+        - O que podemos fazer com os objetos:
+            - Cadastrar
+            - Atualizar
+            - Pesquisar
+            - Listar
+            - Apagar     
